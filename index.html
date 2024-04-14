@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask App</title>
+    <style>
+        body {
+            background-color: rgb(234, 234, 218);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+         p{
+            font-weight: bold;
+        } 
+    </style>
 </head>
 <body>
-    <h1>Welcome, {{ name }}</h1>
-    <p>Current Time: {{ current_time }}</p>
-    <p>Current Working Directory: {{ current_directory }}</p>
+    <div class="container">
+        <h1>Welcome to Flask Application</h1>
+        <div class="info">
+            <p>Current time:<br> <br>{{ current_time }}</p>
+            <p>Current Directory<br><br> {{ current_directory }}</p>
+        </div>
+    </div>
 </body>
 </html>
